@@ -1,2 +1,3 @@
-# JavaScript-Review-and-Practice
-Reviewing JavaScript Fundamentals via the 30DaysofJavaScript challenge made by Asabeneh, includes practice problems and projects
+# All-Learnt-Tech-Review-and-Practice
+
+Reviewing all tech learned during bootcamp program.
