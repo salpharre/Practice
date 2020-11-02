@@ -1,0 +1,1 @@
+// pass props from main page with state to here for moment
