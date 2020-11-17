@@ -1,6 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Main() {
+    // call moment to get array of timezones
+    function timeZoneArray() {
+        
+    }
+
+    ////// import useEffect at the top
+    /*
+    useEffect(() => {
+        timeZoneArray()
+    }, []);
+    
+    */
+
+    // state to hold object of values
+    const [formObject, setFormObject] = useState({});
+    // array of output
+    const [formOutput, setFormOutput] = useState([]);
+
+
+    // grabs value from input and dropdown to save to state
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormObject({ ...formObject, [name]: value });
+    }
+
+    function getTimezoneAbbr() {
+
+    }
+
+    function concatenateEverything() {
+
+    }
+
+
+    const handleFormSubmit = (e) => {
+        e.preventDefault();
+        // first, call function that will get the timezone abbr
+        // call a function that will concatenate the time, date and timezone 
+        // and save to output array state
+    }
 
     return (
         <div className="container p-5">
@@ -16,8 +56,8 @@ function Main() {
                                         className="form-control"
                                         id="date"
                                         name="date"
-                                        // onChange={handleInputChange}
-                                        // value={date}
+                                        onChange={handleInputChange}
+                                        value={formObject.date || ""}
                                         required
                                     />
                                 </div>
@@ -30,8 +70,8 @@ function Main() {
                                         className="form-control"
                                         id="time"
                                         name="time"
-                                        // onChange={handleInputChange}
-                                        // value={time}
+                                        onChange={handleInputChange}
+                                        value={formObject.time || ""}
                                         required
                                     />
                                 </div>
