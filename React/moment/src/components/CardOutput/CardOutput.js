@@ -1,12 +1,12 @@
-import React from "react";
-import { Card } from "react-bootstrap";
+// import React from "react";
+// import { Card } from "react-bootstrap";
 
-function CardOutput() {
-    return (
-        <Card>
+// function CardOutput() {
+//     return (
+//         <Card>
 
-        </Card>
-    );
-}
+//         </Card>
+//     );
+// }
 
-export default CardOutput;
+// export default CardOutput;
