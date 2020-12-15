@@ -27,41 +27,27 @@ function Main() {
                         <form>
                             <div className="form-group row">
                                 <div className="col">
-                                    <label htmlFor="date">Date</label>
+                                    <label htmlFor="video">Video</label>
                                     <input
-                                        type="date"
+                                        type="text"
                                         className="form-control"
-                                        id="date"
-                                        name="date"
+                                        id="video"
+                                        name="video"
                                         onChange={handleInputChange}
-                                        value={formObject.date || ""}
+                                        value={formObject.video || ""}
                                         required
                                     />
                                 </div>
                             </div>
                             <div className="form-group row">
                                 <div className="col">
-                                    <label htmlFor="time">Time</label>
-                                    <input
-                                        type="time"
-                                        className="form-control"
-                                        id="time"
-                                        name="time"
-                                        onChange={handleInputChange}
-                                        value={formObject.time || ""}
-                                        required
-                                    />
-                                </div>
-                            </div>
-                            <div className="form-group row">
-                                <div className="col">
-                                    <label htmlFor="timeZone">TimeZones</label>
+                                    <label htmlFor="videoType">Video Link</label>
                                     <div className="dropdown">
-                                        <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Your Timezone
+                                    <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Video Type
                                     </button>
                                         <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            {/* map out the array of timezones here */}
+                                            {/* hardcode options here */}
                                         </div>
                                     </div>
                                 </div>
