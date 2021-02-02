@@ -5,13 +5,19 @@
 
   Let's go through the important bits real quick
 */
+/* 
+:root and html are basically the same
+only that :root is a higher level and has a greater specificity then html
+use :root for specifying variables and html for everthing else
+*/
 :root {
   --yellow: #ffc600;
   --black: #272727;
 }
 
 html {
-  /* border-box box model allows us to add padding and border to our elements without increasing their size */
+  /* border-box box model allows us to add padding and border to our elements without increasing their size
+  */
   box-sizing: border-box;
   /* A system font stack so things load nice and quick! */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
